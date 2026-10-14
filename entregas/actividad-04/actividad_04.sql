@@ -1,0 +1,5 @@
+CREATE SCHEMA IF NOT EXISTS core;
+
+CREATE TYPE core.tipo_moneda AS ENUM ('USD', 'EUR', 'MXN');
+CREATE TYPE core.tipo_cuenta AS ENUM ('CHECKING', 'SAVINGS', 'CREDIT');
+CREATE TYPE core.tipo_transaccion AS ENUM ('DEPOSIT', 'WITHDRAWAL', 'TRANSFER');
