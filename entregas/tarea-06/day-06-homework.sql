@@ -1,0 +1,3 @@
+ALTER TABLE core.transactions ADD CONSTRAINT chk_transactions_description_valid
+ CHECK (LENGTH(TRIM(description)) >= 5) NOT VALID;
+ALTER TABLE core.transactions VALIDATE CONSTRAINT chk_transactions_description_valid;
